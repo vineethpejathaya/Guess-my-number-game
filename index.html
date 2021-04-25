@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"type="text/css" href="style.css">
     <title>Guess My Number</title>
+    
 </head>
 <body>
     <div class="Text" id="main">Guess the Number</div>
@@ -12,12 +13,20 @@
     <div class="Text" id="instruction">Choose the number between 1 and 20</div>
 <br>
  <section>   
-     <div class="result">?</div>
+     <div class="screen-number">?</div>
      <hr>
      <p class="start-message">Start guessing . .</p>
-    <input type="text" class="input">
-    
-    
+    <div class="input">
+     <input type="number">
+    </div>
+    <button class="check-click" >Check</button>
+    <button class="refresh-click">Refresh</button> 
+    <div class="score">
+    <p> Score 🏅 : <span>0</span></p>
+    <br>
+    <p> Highscore 🏆 : <span>0</span></p>
+</div>
 </section>
+<script src="script.js"></script>
 </body>
 </html>
