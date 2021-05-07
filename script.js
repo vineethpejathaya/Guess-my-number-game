@@ -10,9 +10,11 @@ const input = document.querySelector('input');
 const screenNumber = document.querySelector(".screen-number");
 const refreshClick = document.querySelector(".refresh-click");
 const scorePlay = document.querySelector(".scoreplayer");
-const highScore = document.querySelector(".highscore");
+const highscore = document.querySelector(".highscore");
+scorePlay.textContent = score
+var highScore = 0;
 checkClick.addEventListener('click',function(){
-     if(score >0)
+     if(score > 0)
      {
         if(input.value !== "")
         {
@@ -24,17 +26,24 @@ checkClick.addEventListener('click',function(){
                 {
                 message.textContent = "congratulations !";
                 screenNumber.textContent = secNumber;
+                    if(score > highScore)
+                    {
+                        highScore = score;
+                    highscore.textContent = highScore;
+                    }
                 }
                 else if (inputNumber < secNumber)
                 {
                     message.textContent = "you are too low !";
                     score--;
-                    score.textContent = score
+                    scorePlay.textContent = score
 
                 }
                 else
                 {
                     message.textContent = "you are too high !";
+                    score--;
+                    scorePlay.textContent = score
                 }
             } 
             else
@@ -49,13 +58,17 @@ checkClick.addEventListener('click',function(){
      }
      else
      {
-        message.textContent = "Game Over !"
+        message.textContent = " Game Over !"
      }
 })
 
 refreshClick.addEventListener('click', function(){
-    let secNumber = Math.floor(Math.random()* (upper - lower +1)+lower);
-console.log(secNumber);
+    secNumber = Math.floor(Math.random()* (upper - lower +1)+lower);
+    console.log(secNumber);
+    score = 20;
+    scorePlay.textContent = score;
+    screenNumber.textContent = "?";
+
 })
 
 
