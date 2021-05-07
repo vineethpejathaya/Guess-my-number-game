@@ -69,10 +69,10 @@ refreshClick.addEventListener('click', function(){
     scorePlay.textContent = score;
     input.value = '';
     screenNumber.textContent = "?";
+    message.textContent = "Start Guessing ..";
     
 
 })
-
 
 
 
