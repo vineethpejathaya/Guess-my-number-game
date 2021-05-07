@@ -67,8 +67,9 @@ refreshClick.addEventListener('click', function(){
     console.log(secNumber);
     score = 20;
     scorePlay.textContent = score;
+    input.value = '';
     screenNumber.textContent = "?";
-    input.textContent = "";
+    
 
 })
 
