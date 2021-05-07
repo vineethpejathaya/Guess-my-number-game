@@ -5,11 +5,20 @@
     font-family: 'Bangers', cursive;
    
 }
+body{
+    
+    
+}
 
 :root{
     --primary: #1D4ED8 ;
     --secondary: #6D28D9;
     --white: #ffffff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .Text{
     text-align: center;
@@ -20,6 +29,11 @@
 #instruction{
     font-size: 200%;
 }
+img{
+    width: 20%;
+    height: 20%;
+}
+
 section{
     background-color: #E5E7EB;
     padding: 2rem;
@@ -60,18 +74,18 @@ input{
     background-color: #E5E7EB;
 }
 button{
-   height: 30px;
+   height: 15%;
    width: 15%;
    margin-top: 8%;
-   padding: 1rem 1rem 1rem 1rem;
    font-size: 90%;
-   border 1px solid black;
+   border: 1px solid black;
+   
 }
-.check{
+.check-click{
+    margin-left: 5%;
+}
+.refresh-click{
     margin-left: 4%;
-}
-.refresh{
-    margin-left: 6%;
 }
 .score{
     font-size: 15px;
